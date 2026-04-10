@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Exaucé.Dev</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body class="contact-page">
+
+    <nav class="navbar">
+        <div class="logo">EXAUCÉ<span>.DEV</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="apropos.html">A propos</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="contact-header">
+            <h1>Initialiser_Contact()</h1>
+            <p>Un projet en tête ? Choisissez votre canal de communication préféré.</p>
+        </section>
+
+        <div class="contact-grid">
+            <div class="contact-box">
+                <div class="box-header">
+                    <span class="icon">✉️</span>
+                    <h3>Protocole Email</h3>
+                </div>
+                <form action="https://formspree.io/f/mzdjrdkp" method="POST" id="contact-form">
+                    <div class="input-field">
+                        <input type="text" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" name="email" placeholder="votre@email.com" required>
+                    </div>
+                    <div class="input-field">
+                        <textarea name="message" rows="4" placeholder="Détails du projet..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">EXÉCUTER_ENVOI</button>
+                </form>
+                <div id="form-status"></div>
+            </div>
+
+            <div class="contact-box whatsapp-box">
+                <div class="box-header">
+                    <span class="icon">💬</span>
+                    <h3>Discussion Directe</h3>
+                </div>
+                <p class="whatsapp-desc">Besoin d'une réponse instantanée ? Cliquez sur le bouton pour m'écrire directement.</p>
+                
+                <a href="https://wa.me/243842317817?text=Bonjour%20Exaucé,%20je%20viens%20de%20découvrir%20votre%20portfolio%20et%20j'aimerais%20discuter%20d'un%20projet%20avec%20vous." 
+                   target="_blank" class="btn-whatsapp">
+                    OUVRIR_WHATSAPP
+                </a>
+
+                <div class="status-badge">
+                    <span class="pulse-dot"></span>
+                    <span>Statut : En ligne</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="contact.js"></script>
+</body>
+</html>
