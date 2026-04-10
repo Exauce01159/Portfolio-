@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exaucé.Dev | Portfolio Officiel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="loader"><div class="pulse"></div></div>
+
+    <div id="main-content">
+        <nav class="navbar">
+            <div class="logo">EXAUCÉ<span>.DEV</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+            </ul>
+        </nav>
+
+        <main class="container">
+            <section class="hero">
+                <div class="badge">Maintenant disponible pour tout nouveaux projets informatique</div>
+                <h1>Solutions <br><span>Numériques & Code</span></h1>
+                <p>Je suis <strong>Exaucé Kisiabongo</strong>, Informaticien Full-Stack spécialisé dans le développement moderne , et avec mon equipe des informaticiens nous allons vous montrez et apprendre l'architecture logicielle performante...</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/243842317817?text=Bonjour%20Exaucé,%20je%20souhaite%20discuter%20d'un%20projet." 
+                       target="_blank" class="btn-wa">
+                       <i class="fab fa-whatsapp"></i> WhatsApp Direct
+                    </a>
+                    <a href="contact.html" class="btn-contact">Me Contacter</a>
+                </div>
+            </section>
+
+            <hr class="separator">
+
+            <section class="info-section">
+                <div class="section-title">
+                    <span>01.</span>
+                    <h2>Expertise & Services</h2>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Développement Web</h3>
+                        <p>Création de sites vitrines et applications web robustes avec les dernières technologies possible.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-database"></i>
+                        <h3>Architecture Système</h3>
+                        <p>Conception de structures logicielles évolutives et gestion de bases de données sécurisées.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Solutions Mobiles</h3>
+                        <p>Interfaces adaptées pour une expérience utilisateur fluide sur tous les écrans.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <i class="fab fa-python"></i>
+                        <h3>PYTHON </h3>
+                        <p>Language de base pour programmation.</p>
+                    </div>
+                </div>
+            </section>
+
+            
+            
+            <hr class="separator">
+
+            <section class="skills-section">
+                <div class="section-title">
+                    <span>02.</span>
+                    <h2>Stack Technique</h2>
+                </div>
+                <div class="skills-tags">
+                    <span class="skill-clickable" data-info="Expertise en Python pour l'automatisation, le scripting et l'analyse de données.">Python / Programmation</span>
+                    <span class="skill-clickable" data-info="Maîtrise du HTML5 pour la structure et CSS3 pour des designs modernes et responsifs.">HTML / CSS</span>
+                    <span class="skill-clickable" data-info="Développement d'interfaces dynamiques et interactives côté client avec JS moderne.">JavaScript </span>
+                    <span class="skill-clickable" data-info="Conception de systèmes dynamiques avec PHP et gestion de bases de données MySQL.">PHP / MySQL</span>
+                    <span class="skill-clickable" data-info="Planification et organisation des composants logiciels pour une performance maximale.">Architecture Logicielle</span>
+                    <span class="skill-clickable" data-info="Gestion de version et collaboration efficace sur des dépôts de code distants.">Git / GitHub</span>
+                    <span class="skill-clickable" data-info="Protection des systèmes et mise en place de protocoles de sécurité robustes.">Sécurité Informatique</span>
+                </div>
+
+                <div id="skill-detail-box" class="skill-detail-hidden">
+                    <i class="fas fa-info-circle"></i>
+                    <p id="skill-text">Appuyez sur une compétence pour voir les détails...</p>
+                </div>
+            </section>
+            
+            
+             <hr class="separator">
+
+<section class="projects-section">
+    <div class="section-title">
+        <span>03.</span>
+        <h2>Projets Récents</h2>
+    </div>
+
+    <div class="filter-buttons">
+        <button class="btn-filter active" data-filter="all">Tous</button>
+        <button class="btn-filter" data-filter="web">Web</button>
+        <button class="btn-filter" data-filter="python">Python</button>
+    </div>
+
+    <div class="projects-grid">
+        <div class="project-card" data-category="web">
+            <div class="project-content">
+                <h3>E-Commerce App</h3>
+                <p>Plateforme de vente en ligne avec paiement intégré.</p>
+                <span class="tag">HTML / PHP</span>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="python">
+            <div class="project-content">
+                <h3>Automation Bot</h3>
+                <p>Script Python pour l'automatisation de rapports Excel.</p>
+                <span class="tag">Python</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+            <hr class="separator">
+            <section class="feedback-section">
+                <div class="section-title">
+                    <span>03.</span>
+                    <h2>Livre d'or</h2>
+                </div>
+                <p class="section-desc">Votre avis compte. Veuillez laissez un commentaire !.</p>
+                
+                <div class="comment-box">
+                    <form action="https://formspree.io/f/mzdjrdkp" method="POST" id="comment-form">
+                        <input type="text" name="pseudo" placeholder="Votre Pseudo ou Entreprise" required maxlength="30">
+                        <textarea name="message" placeholder="Quelle est votre appréciation du travail d'Exaucé ?" required maxlength="500"></textarea>
+                        
+                        <input type="text" name="_gotcha" style="display:none">
+                        
+                        <button type="submit" class="btn-submit">PUBLIER_L_AVIS</button>
+                    </form>
+                    <div id="status-msg"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Exaucé Kisiabongo. Tous droits réservés.</p>
+        </footer >
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
