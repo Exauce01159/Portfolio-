@@ -1,0 +1,151 @@
+/* PORTFOLIO.CSS - EXAUCÉ KISIABONGO 
+   Thème : Science Informatique / Dark Engineering
+*/
+
+/* 1. VARIABLES DÉDIÉES AU THÈME SOMBRE */
+:root {
+    --bg-tech: #0f172a;        /* Bleu nuit profond (Fond) */
+    --card-bg: #1e293b;       /* Ardoise (Cartes) */
+    --accent-dev: #38bdf8;    /* Bleu ciel (Focus) */
+    --code-green: #10b981;    /* Vert Terminal */
+    --text-silver: #cbd5e1;   /* Texte secondaire */
+    --white-pure: #ffffff;    /* Texte principal */
+    --border-dim: #334155;    /* Bordures discrètes */
+}
+
+/* 2. FORCE L'APPLICATION DU THÈME SUR LE BODY */
+/* Note : Ajoute class="portfolio-page" à ton <body> dans portfolio.html */
+body.portfolio-page {
+    background-color: var(--bg-tech) !important;
+    color: var(--text-silver) !important;
+    margin: 0;
+}
+
+/* 3. ADAPTATION DE LA NAVBAR (Évite le blanc sur le thème sombre) */
+body.portfolio-page .navbar {
+    background-color: var(--card-bg) !important;
+    border-bottom: 1px solid var(--border-dim);
+}
+
+body.portfolio-page .nav-links a {
+    color: var(--text-silver) !important;
+}
+
+body.portfolio-page .nav-links a.active,
+body.portfolio-page .nav-links a:hover {
+    color: var(--accent-dev) !important;
+}
+
+/* 4. HEADER DU PORTFOLIO (Correction visuelle pour ton image) */
+.portfolio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.portfolio-header {
+    text-align: left;
+    border-left: 5px solid var(--accent-dev);
+    padding: 15px 0 15px 25px;
+    margin-bottom: 50px;
+}
+
+.portfolio-header h1 {
+    font-family: 'Fira Code', 'Courier New', monospace;
+    color: var(--white-pure) !important; 
+    font-size: 2.2rem;
+    margin: 0 0 10px 0;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.portfolio-header p {
+    color: var(--accent-dev) !important;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 1 !important;
+    margin: 0;
+}
+
+/* 5. GRILLE ET CARTES DE PROJETS */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-dim);
+    border-radius: 12px;
+    padding: 30px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-dev);
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.category-tag {
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    color: var(--code-green);
+    background: rgba(16, 185, 129, 0.1);
+    padding: 5px 12px;
+    border-radius: 6px;
+    width: fit-content;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.project-card h3 {
+    color: var(--white-pure) !important;
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    color: var(--text-silver);
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+/* 6. PILE TECHNIQUE (Tech Stack) */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 20px 0 0 0;
+    border-top: 1px solid var(--border-dim);
+}
+
+.tech-stack li {
+    font-size: 0.8rem;
+    font-family: monospace;
+    background: var(--bg-tech);
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--border-dim);
+    color: var(--accent-dev);
+}
+
+/* 7. DÉCORATION "CODE" */
+.project-card::after {
+    content: "</>";
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0.05;
+    font-size: 3rem;
+    font-family: monospace;
+    color: var(--white-pure);
+}
